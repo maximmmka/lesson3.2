@@ -54,7 +54,7 @@ abstract class Product
     }
     public function printFullDescription()
     {
-        echo '<b>наименование товара:</b> '.$this->title.', <b>производитель:</b> '.$this->make.', <b>модель:</b> '.$this->model.', <b>вес:</b> '.$this->weight.' кг.'.', <b>цена:</b> '.$this->price.' руб.'.'<b>цена со скидкой:</b> '.$this->getPrice().' руб.'.', <b>стоимость доставки:</b> '.$this->getDelivery().' руб.';
+        echo '<b>Name of product:</b> '.$this->title.', <b>manufacturer:</b> '.$this->make.', <b>model:</b> '.$this->model.', <b>weight:</b> '.$this->weight.' kg.'.', <b>price:</b> '.$this->price.' rub.'.'<b>discount price:</b> '.$this->getPrice().' rub.'.', <b>cost of delivery:</b> '.$this->getDelivery().' rub.';
         $this->printDescription();
     }
     abstract public function printDescription();
